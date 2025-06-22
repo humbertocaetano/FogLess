@@ -1,0 +1,8 @@
+{
+  "key.fogless.toggle": "Toggle FogLess",
+  "category.fogless": "FogLess Mod",
+  "fogless.enabled": "FogLess Enabled",
+  "fogless.disabled": "FogLess Disabled",
+  "fogless.status.on": "✅ FogLess ON",
+  "fogless.status.off": "❌ FogLess OFF"
+}

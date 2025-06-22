@@ -1,41 +1,36 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
-	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"id": "fogless",
+	"version": "1.0.0",
+	"name": "FogLess",
+	"description": "Remove or reduce the ugly fog from Minecraft 1.21.6, making the game look beautiful again!",
 	"authors": [
-		"Me!"
+		"humbertocaetano"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/humbertocaetano/FogLess",
+		"sources": "https://github.com/humbertocaetano/FogLess",
+		"issues": "https://github.com/humbertocaetano/FogLess/issues"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
-	"environment": "*",
+	"license": "MIT",
+	"icon": "assets/fogless/icon.png",
+	"environment": "client",
 	"entrypoints": {
-		"main": [
-			"com.example.ExampleMod"
-		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.humbertocaetano.fogless.FogLessMain"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
+		"fogless.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.14",
+		"fabricloader": ">=0.16.0",
 		"minecraft": "~1.21.6",
 		"java": ">=21",
 		"fabric-api": "*"
 	},
 	"suggests": {
-		"another-mod": "*"
+	},
+	"custom": {
 	}
 }
